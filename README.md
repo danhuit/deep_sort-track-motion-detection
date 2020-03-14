@@ -1,6 +1,6 @@
 ﻿# Track motion use Deep Sort
 ### 1. **Introduction**
-This repository use [1](https://github.com/nwojke/deep_sort) to track motion detected.
+This repository use [[1]](https://github.com/nwojke/deep_sort) to track motion detected.
 ### 2. **Dependencies**
 - Opencv
 - Numpy
