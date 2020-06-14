@@ -7,7 +7,6 @@ from main_tracker import track
 
 def detection():
 
-    # read video/ IP_scamera
     cap = cv2.VideoCapture(sys.argv[1])
 
     # Define the codec and create VideoWriter object
