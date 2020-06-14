@@ -6,8 +6,6 @@ from main_tracker import track
 
 
 def detection():
-
-    # read video
     cap = cv2.VideoCapture(sys.argv[1])
 
     # Define the codec and create VideoWriter object
@@ -21,6 +19,7 @@ def detection():
 
     while ret:
         frame, boxs = motion_detection(frame, frame_check)
+        print("processing")
         if len(boxs) > 0:
             frame = track(frame, tracker, encoder, boxs)
         if frame_check is None:
