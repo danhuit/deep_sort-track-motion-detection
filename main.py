@@ -13,9 +13,12 @@ def detection():
     # Define the codec and create VideoWriter object
     ret, frame = cap.read()
     height , width , layers =  frame.shape
+    
+    #define output video
     video_output = cv2.VideoWriter('output.avi',cv2.VideoWriter_fourcc(*'XVID'),
                           cap.get(cv2.cv.CV_CAP_PROP_FPS), (width,height))
     
+    #load model for tracker
     tracker, encoder = load_model()
     frame_check = None
 
