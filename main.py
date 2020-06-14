@@ -28,6 +28,7 @@ def detection():
         if frame_check is None:
             frame_check = frame
         video_output.write(frame)
+        # get new frame
         ret, frame = cap.read()
 
 if __name__ == "__main__":
